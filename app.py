@@ -10,7 +10,7 @@ file = open('model.pkl', 'rb')
 clf = pickle.load(file)
 file.close()
 
-# Creating Required Routes
+# Route: Home Page
 @app.route('/', methods=['GET', 'POST'])
 def home():
   home = "active"
@@ -27,6 +27,7 @@ def home():
     return render_template('result.html', inf=round(infProb*100))
   return render_template('index.html', home=home, about=about)
 
+# Route: About Page
 @app.route('/about')
 def about():
   home = ""

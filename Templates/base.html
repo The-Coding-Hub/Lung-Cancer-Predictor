@@ -19,7 +19,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/static/img/logo.png" type="image/x-icon">
 
-    <title>{% block title %} {% endblock title %} - Lung Cancer Detector</title>
+    <title>{% block title %} {% endblock title %} - Lung Cancer Predictor</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -30,7 +30,7 @@
           id="main-title"
           href="/"
           style="padding-left: 0.5rem"
-          >Lung Cancer Detector</a
+          >Lung Cancer Predictor</a
         >
         <button
           class="navbar-toggler"
@@ -54,26 +54,37 @@
             <li class="nav-item">
               <a class="nav-link {{about}}" href="/about">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="date"></a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div>
-      <h2 class="h2 text-center my-3">Ways to prevent Lung Cancer</h2>
-      <marquee class="prevention">
+    <div class="preventions">
+      <marquee class="prevention my-2" scrollamount="8">
         <h3>
-          &rarr;Stop smoking &rarr;Avoid secondhand smoke &rarr;Test your home for radon &rarr;Avoid carcinogens at work &rarr;Eat a diet full of fruits and vegetables &rarr;Exercise most days of the week
+          <span>&bull;&nbsp;Stop Smoking</span>
+          <span>&bull;&nbsp;Avoid Secondhand Smoke</span>
+          <span>&bull;&nbsp;Test your home for radon</span>
+          <span>&bull;&nbsp;Avoid carcinogens at work</span>
+          <span>&bull;&nbsp;Eat a diet full of fruits and vegetables</span>
+          <span>&bull;&nbsp;Exercise most days of the week</span>
         </h3>
       </marquee>
     </div>
 
     {% block common %} {% endblock common %}
 
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <!-- External JS -->
+    <script src="/static/js/date.js"></script>
   </body>
 </html>

@@ -18,6 +18,7 @@ body {
   display: block;
   margin: auto;
   font-size: 20px;
+  width: 42%;
 }
 
 .container {
@@ -36,4 +37,23 @@ body {
   border: 2px solid #2ad4e6;
   padding: 5px 5px 0px 5px;
   border-radius: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.alert {
+  font-size: 25px;
+}
+
+.result {
+  height: 72vh;
+}
+
+#date {
+  background-color: black;
+  color: #46fa0a;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px !important;
 }
