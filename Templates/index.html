@@ -1,0 +1,66 @@
+{% extends 'base.html' %} 
+{% block title %} Home {% endblock title %} 
+{% block common %}
+
+<div class="container my-3">
+  <h1 class="h1 text-center">Welcome to Lung Cancer Detector</h1>
+  <div class="check-form my-4">
+    <form action="/" method="POST">
+      <div class="mb-3">
+        <label for="smoke" class="form-label">Do you smoke?</label>
+        <select id="smoke" class="form-select" name="smoke" required>
+          <option value="">None</option>
+          <option value="1">Frequently</option>
+          <option value="0">Sometimes</option>
+          <option value="-1">Never</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="radonExpo" class="form-label">Are you frequently exposed to Radon Gas?</label>
+        <select id="radonExpo" class="form-select" name="radonExpo" required>
+          <option value="">None</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="alchohol" class="form-label">Do you consume alchohol?</label>
+        <select id="alchohol" class="form-select" name="alchohol" required>
+          <option value="">None</option>
+          <option value="1">Frequently</option>
+          <option value="0">Sometimes</option>
+          <option value="-1">Never</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="bloodCough" class="form-label">Are you suffering from blood cough?</label>
+        <select id="bloodCough" class="form-select" name="bloodCough" required>
+          <option value="">None</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="breatheDiff" class="form-label">Are you facing difficulty in breathing?</label>
+        <select id="breatheDiff" class="form-select" name="breatheDiff" required>
+          <option value="">None</option>
+          <option value="1">Frequently</option>
+          <option value="0">Sometimes</option>
+          <option value="-1">Never</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="chestPain" class="form-label">Are you having Chest Pain?</label>
+        <select id="chestPain" class="form-select" name="chestPain" required>
+          <option value="">None</option>
+          <option value="1">Frequently</option>
+          <option value="0">Sometimes</option>
+          <option value="-1">Never</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" id="sub-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+{% endblock common %}

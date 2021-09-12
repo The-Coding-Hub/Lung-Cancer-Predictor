@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %} About Detector {% endblock title %}
+{% block common %}
+
+<div class="container my-3">
+  <h1 class="h1 text-center">About this Detector</h1>
+  <div class="about">
+    <div class="notes">
+      <h3 class="h3">
+        About Detector:
+      </h3>
+      <h5 class="h5">
+        This Application gives you the Probability of being affected by Lung Cancer by examining the symptoms. You need to fill the
+        form in the home page and then you will be provided with the Probability of Infection. Also, if your percentage of infection is high then please consider
+        consulting a Medical Specialist for better advices.
+      </h5>
+    </div>
+    <div class="notes my-3">
+      <h3 class="h3">
+        Requirement of this Detector:
+      </h3>
+      <h5 class="h5">
+        As we know that the growing cases of Lung Cancer have affected lives of many people. Early diagnosis of this diesease can be very helpful to the affected people. This Detector aims to reduce the cases of Lung Cancer by diagnosing it in an early stage.
+      </h5>
+    </div>
+    <div class="notes my-3">
+      <h3 class="h3">
+        My Idea for this Detector:
+      </h3>
+      <h5 class="h5">
+        The idea of my project is that a set of doctors should sit and discuss about the mostly seen symptoms of Lung Cancer such as Blood Cough, Difficulty in Breathing, Chest Pain etc. They should make a complete data set by
+        testing the symptoms of those people who have been tested with Lung Cancer. After that we can work on
+        that data and create a ML Model for better predictions. Then according to that prediction we should test the people and diagnose the diesease at an early stage.
+        <br><br>
+        <span style="color: red;">
+          Note: This model is not ready to use. It is based on random data. It needs to be trained using actual data.
+        </span>
+        </br>
+      </h5>
+    </div>
+    <div class="notes my-3">
+      <h3 class="h3">
+        My Solution:
+      </h3>
+      <h5 class="h5">
+        I have actually made a Website which is kind of a form that the people need to fill for
+        themselves to be clarified that they require being dignosed or not. The data I am using is completely random but for this model to be used we need to
+        get actual data which will be provided by a set of healthcare specialists.
+      </h5>
+    </div>
+    <div class="notes my-3">
+      <h3 class="h3">
+        Working of this App:
+      </h3>
+      <h5 class="h5">
+        This model is trained on the Logistic Regression Algorithm of a Python Library called Scikit Learn. The model is
+        trained with Random Data generated using MS Excel and stored in an Comma Separated File(CSV). Then the model predicts according
+        to the inputs of the user.
+      </h5>
+    </div>
+    <div class="notes my-3">
+      <h3 class="h3">
+        More Info:
+      </h3>
+      <h5 class="h5">
+        <span class="h4">&rarr; ML Model Parameters: <br></span>
+        <ul>
+          <li>A team of doctors can sit down to find out the best model parameters.</li><br>
+        </ul>
+
+        <span class="h4">&rarr; Random Features Used:<br></span>
+        <ul>
+          <li>Smoking</li>
+          <li>Exposure to Radon Gas</li>
+          <li>Alchohol Consumption</li>
+          <li>Blood Cough</li>
+          <li>Difficulty in Breathing</li>
+          <li>Chest Pain</li>
+          <br>
+        </ul>
+
+        <span class="h4">&rarr; Labels:</span>
+        <ul><li>Probability of being affected by Lung Cancer.</li> <br></ul>
+
+        <span class="h4">&rarr; Technologies Used:</span>
+        <ul>
+          <li>Bootstrap Framework: For Front-End Development</li>
+          <li>Flask: For Backend Development</li>
+          <li>Python: For ML Model and Backend</li>
+          <li>Logistic Regression Algorithm: For training model and Predictions</li>
+          <li>Pandas, Scikit Learn, NumPy: For training and making the ML Model</li>
+          <li>MS Excel: For generating Random Data</li>
+          <li>Pickle: For storing predictions</li>
+          <li>Heroku: For Deployment</li>
+        </ul>
+      </h5>
+    </div>
+  </div>
+</div>
+
+{% endblock common %}
