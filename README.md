@@ -12,7 +12,7 @@ After cloning the repository open the terminal in the corresponding folder and t
 `python training.py`
 
 ### Step - 3: Start Website Server
-After running the training file you must have noticed that a new file with the name `model.pkl` has been created. Now you need to app using this command: 
+After running the training file you must have noticed that a new file with the name `model.pkl` has been created. Now you need to run the app using this command: 
 `python app.py`
 
 ### Step - 4: Open Server
