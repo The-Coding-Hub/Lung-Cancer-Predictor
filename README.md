@@ -7,6 +7,10 @@
 Open any terminal in your system with Git Installed and their execute this command:
 `git clone git@github.com:The-Coding-Hub/Lung-Cancer-Predictor.git`
 
+### Step - 2: Install Requirements
+After cloning the repository you have to install all the requirements by this command: 
+`pip install -r requirements.txt`
+
 ### Step - 2: Train Model
 After cloning the repository open the terminal in the corresponding folder and their run the training.py file using this command:
 `python training.py`
