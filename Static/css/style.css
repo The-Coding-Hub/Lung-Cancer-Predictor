@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#00acff94, #0aafff1c);
+  background: linear-gradient(#0aafff2b, #00acff94);
 }
 
 .nav-link {
@@ -27,14 +27,14 @@ body {
 
 .notes {
   text-align: justify;
-  border: 1px solid #0b95a4;
+  border: 1px solid rgb(0, 0, 0);
   padding: 8px;
   border-radius: 10px;
 }
 
 .prevention {
   background-color: #52d3e833;
-  border: 2px solid #0b95a4;
+  border: 2px solid rgb(0, 0, 0);
   padding: 5px 5px 0px 5px;
   border-radius: 10px;
   margin-right: 8px;
@@ -51,7 +51,7 @@ body {
 
 #date {
   background-color: black;
-  color: #46fa0a;
+  color: #8ddaff;
   border-radius: 10px;
   padding: 10px;
   font-family: 'Times New Roman', Times, serif;
@@ -63,4 +63,13 @@ body {
   .container {
     width: 100%;
   }
+  .form-select {
+    width: 80% !important;
+  }
+}
+
+.form-select {
+  margin: auto;
+  text-align: center;
+  width: 50%;
 }
